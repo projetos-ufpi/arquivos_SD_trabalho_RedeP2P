@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="chat.nupasd_ufpi.chat.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_ExibirMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edt_IP"
+        android:layout_centerVertical="true"
+        android:text="TextView"
+        android:textSize="7pt" />
+
+    <Button
+        android:id="@+id/btn_Mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edt_Mensagem"
+        android:layout_marginTop="49dp"
+        android:text="Enviar Requisição / Buscar"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <Button
+        android:id="@+id/btn_IP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/edt_IP"
+        android:text="Conectar"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <EditText
+        android:id="@+id/edt_IP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Inserir Endereço IP do próximo host"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <EditText
+        android:id="@+id/edt_Mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_Mensagem"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:hint="Inserir nome da música buscada"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <Button
+        android:id="@+id/btn_IniciarServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_IP"
+        android:text="Iniciar Servidor" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_ExibirMensagem"
+        android:layout_alignStart="@+id/txt_ExibirMensagem"
+        android:layout_marginBottom="30dp"
+        android:text="Informações:" />
+</RelativeLayout>
